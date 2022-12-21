@@ -1,4 +1,5 @@
 Chall: Reversing ELF
+
 URL: https://tryhackme.com/room/reverselfiles
 
 ---
@@ -157,6 +158,6 @@ if (iVar2 == -0x35010ff3) {
 }
 ```
 
-3. when we run the function with that decimal it will give flag: `/crackme8 -889262067`
+3. when we run the function with that decimal it will give flag: `./crackme8 -889262067`
 
 Flag: `flag{at_least_this_cafe_wont_leak_your_credit_card_numbers}`
