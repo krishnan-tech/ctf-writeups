@@ -1,22 +1,23 @@
+# reverselfiles
+
 Chall: Reversing ELF
 
 URL: https://tryhackme.com/room/reverselfiles
 
----
+***
 
-## Task 1: Crackme1
+### Task 1: Crackme1
 
 Solution:
 
 1. `chmod +x ./crackme1`
-2. Run the file: `./crackme1`
-   and boom, we will get the flag!!
+2. Run the file: `./crackme1` and boom, we will get the flag!!
 
 Flag: `flag{not_that_kind_of_elf}`
 
----
+***
 
-## Task 2: Crackme2
+### Task 2: Crackme2
 
 Solution:
 
@@ -26,9 +27,9 @@ Solution:
 
 Flag: `flag{if_i_submit_this_flag_then_i_will_get_points}`
 
----
+***
 
-## Task 3: Crackme3
+### Task 3: Crackme3
 
 Solution:
 
@@ -38,23 +39,23 @@ Solution:
 
 Flag: `f0r_y0ur_5ec0nd_le55on_unbase64_4ll_7h3_7h1ng5`
 
----
+***
 
-## Task 4: Crackme4
+### Task 4: Crackme4
 
 Solution:
 
 1. we have to solve it using GDB: `gdb crackme4`
-2. getting info of functions using and get the hex value for `strcmp@plt`: `0x0000000000400520  strcmp@plt`
+2. getting info of functions using and get the hex value for `strcmp@plt`: `0x0000000000400520 strcmp@plt`
 3. make breakpoint from that value: `b *0x0000000000400520`
 4. run the program: `r aaaa`
 5. we will see the password string in `$rdi` register: `my_m0r3_secur3_pwd`
 
 Flag: `my_m0r3_secur3_pwd`
 
----
+***
 
-## Task 5: Crackme5
+### Task 5: Crackme5
 
 Solution:
 
@@ -63,13 +64,13 @@ Solution:
 3. run the program using: `r`
 4. use `ni` to check for next instruction and continue entering till it will ask for input.
 5. Write input as `test`
-6. continue `ni` and we will see `OfdlDSA|3tXb32~X3tX@sX`4tXtz`in the register section
+6. continue `ni` and we will see `OfdlDSA|3tXb32~X3tX@sX`4tXtz\`in the register section
 
-Flag:`` OfdlDSA|3tXb32~X3tX@sX`4tXtz ``
+Flag:``OfdlDSA|3tXb32~X3tX@sX`4tXtz``
 
----
+***
 
-## Task 6: Crackme6
+### Task 6: Crackme6
 
 Solution:
 
@@ -117,13 +118,13 @@ undefined8 my_secure_test(char *param_1)
 }
 ```
 
-3. From this function, we can clearly see the flag
+1. From this function, we can clearly see the flag
 
 Flag: `1337_pwd`
 
----
+***
 
-## Task 7: Crackme7
+### Task 7: Crackme7
 
 Solution:
 
@@ -137,13 +138,13 @@ else if (local_14 == 0x7a69) {
 }
 ```
 
-3. So, if value is 0x7a69 (31337), it will return flag
+1. So, if value is 0x7a69 (31337), it will return flag
 
 Flag: `flag{much_reversing_very_ida_wow}`
 
----
+***
 
-## Task 8: Crackme8
+### Task 8: Crackme8
 
 Solution:
 
@@ -158,6 +159,6 @@ if (iVar2 == -0x35010ff3) {
 }
 ```
 
-3. when we run the function with that decimal it will give flag: `./crackme8 -889262067`
+1. when we run the function with that decimal it will give flag: `./crackme8 -889262067`
 
 Flag: `flag{at_least_this_cafe_wont_leak_your_credit_card_numbers}`
