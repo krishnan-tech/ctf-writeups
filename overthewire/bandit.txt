@@ -1,0 +1,27 @@
+Username    Password                                    next_level_password                     How?
+----------------------------------------------------------------------------------------------------------------
+bandit0     bandit0                                     NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL        `cat readme`
+bandit1     NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL            rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi        `cat ./-`
+bandit2     rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi            aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG        `cat spaces\ in\ this\ filename`
+bandit3     aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG            2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe        `cat ./inhere/.hidden`
+bandit4     2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe            lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR        `cat ./*`
+bandit5     lrIWWI6bB37kxfiCQZqUdOIYfr6eEeq             P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU        `find ./ -size 1033c -exec ls -sh {} +`R
+bandit6     P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU            z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S        `find / -group bandit6 -user bandit7 -size 33c 2>/dev/null; cat /var/lib/dpkg/info/bandit7.password`
+bandit7     z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S            TESKZC0XvTetK0S9xNwm25STk5iWrBvP        `cat data.txt | grep millionth``
+bandit8     TESKZC0XvTetK0S9xNwm25STk5iWrBvP            EN632PlfYiZbn3PhVK3XOGSlNInNE00t        `sort data.txt  | uniq -c | grep "1 "`
+bandit9     EN632PlfYiZbn3PhVK3XOGSlNInNE00t            G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s        `strings data.txt  | grep =`
+bandit10    G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s            6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM        `strings data.txt | base64 -d``
+bandit11    6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM            JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv        `cat data.txt | tr '[a-z]' '[n-za-m]' | tr '[A-Z]' '[N-ZA-M]'`
+bandit12    JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv            wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw        `multiple decompression`            
+bandit13    wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw            download_ssh_key_from_server            `scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .`
+bandit14    ssh_key_from_previous                       jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt        `cat /etc/bandit_pass/bandit14 | nc localhost 30000`
+bandit15    jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt            JQttfApK4SeyHwDlI9SXGR50qclOAil1        `openssl s_client localhost:30001`            
+bandit16    JQttfApK4SeyHwDlI9SXGR50qclOAil1            download_ssh_key_from_server            `nmap -sV localhost -p 31000-32000;openssl s_client localhost:31790`            
+bandit17    ssh_key_from_previous                       hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg        `diff passwords.old passwords.new`
+bandit18    hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg            awhqfNnAbc1naukrpqDYcF95h7HoMTrC        `ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat ~/readme"`            
+bandit19    awhqfNnAbc1naukrpqDYcF95h7HoMTrC            VxCazJaVykI6W36BkBU0mJTCM8rR95XT        `./bandit20-do cat /etc/bandit_pass/bandit20`
+bandit20    VxCazJaVykI6W36BkBU0mJTCM8rR95XT            NvEJF7oVjkddltPSrdKEFOllh9V1IBcq        `echo -n "VxCazJaVykI6W36BkBU0mJTCM8rR95XT" | nc -l -p 1234 &` then `./suconnect 1324``
+bandit21    NvEJF7oVjkddltPSrdKEFOllh9V1IBcq            WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff        `cat /etc/cron.d/cronjob_bandit22 ;  cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`
+bandit22    WdDozAdTM2z9DiFEQ2mGlwngMfj4EZff            QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G        `cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)`
+bandit23    QYw0Y2aiA672PsMmh9puTQuhoz8SyR2G            VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar        `same old crontab, bit tricky`
+bandit24    VAfGXJ1PBSsPSnvsjI8p759leLZ9GGar            p7TaowMYrmu23Ol8hiZh9UvD0O9hpx8d        `bruteforce using shell script`            
