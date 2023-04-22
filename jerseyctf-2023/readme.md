@@ -2,6 +2,8 @@
 
 ctftime: https://ctftime.org/event/1908
 
+All in one writeup: https://hackmd.io/@krishnan/SyJMLgKf3
+
 ### challenges
 ```
 .
