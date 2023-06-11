@@ -46,7 +46,7 @@
     * [plain](./jerseyctf-2023/bin/plain)
   * [web](./jerseyctf-2023/web)
     * [i-got-the-keys](./jerseyctf-2023/web/i-got-the-keys)
-    * [look-im-hacking ](./jerseyctf-2023/web/look-im-hacking )
+    * [look-im-hacking](./jerseyctf-2023/web/look-im-hacking)
     * [ninja-jackers](./jerseyctf-2023/web/ninja-jackers)
     * [poisoined](./jerseyctf-2023/web/poisoined)
     * [put-the-cookie-down](./jerseyctf-2023/web/put-the-cookie-down)
