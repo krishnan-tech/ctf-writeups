@@ -67,6 +67,7 @@
     * [32-bit](./ropemporium/write4/32-bit)
     * [64-bit](./ropemporium/write4/64-bit)
 * [tryhackme](./tryhackme)
+  * [0day](./tryhackme/0day)
   * [25daysofchristmas](./tryhackme/25daysofchristmas)
   * [Reverse-Engineering](./tryhackme/Reverse-Engineering)
   * [blog](./tryhackme/blog)
