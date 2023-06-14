@@ -71,6 +71,7 @@
   * [25daysofchristmas](./tryhackme/25daysofchristmas)
   * [Reverse-Engineering](./tryhackme/Reverse-Engineering)
   * [blog](./tryhackme/blog)
+  * [ghizerctf](./tryhackme/ghizerctf)
   * [internal](./tryhackme/internal)
   * [relevant](./tryhackme/relevant)
   * [revenge](./tryhackme/revenge)
