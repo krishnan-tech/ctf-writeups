@@ -1,36 +1,80 @@
-# ctf-writeups
-
-### Folder structure
-```
-.
-├── hackthebox-cyber-apocalypse-2023
-│   ├── crypto
-│   │   ├── ancient_encodings
-│   │   └── small_steps
-│   ├── forensics
-│   │   ├── alien_cradle
-│   │   ├── extraterrestrial_persistence
-│   │   └── plaintext_tlearsure
-│   ├── hardware
-│   │   └── critical_flight
-│   ├── pwn
-│   │   ├── initial_connection
-│   │   ├── labyrinth
-│   │   └── pandoras_box
-│   ├── rev
-│   │   └── needle_in_a_haystack
-│   └── web
-│       ├── didactic_octo_paddles
-│       ├── drobots
-│       ├── gunhead
-│       ├── orbital
-│       ├── passman
-│       ├── spybug
-│       ├── trapped_source
-│       ├── traptrack
-│       └── unearthly_shop
-├── prostar
-└── tryhackme
-    ├── Reverse-Engineering
-    └── reverse-engineering-1
-```
+# Table of contents
+* [ebucket-2023](./ebucket-2023)
+  * [crypto](./ebucket-2023/crypto)
+  * [pwn](./ebucket-2023/pwn)
+    * [parrot](./ebucket-2023/pwn/parrot)
+    * [shell](./ebucket-2023/pwn/shell)
+  * [rev](./ebucket-2023/rev)
+    * [apps](./ebucket-2023/rev/apps)
+    * [licenseer](./ebucket-2023/rev/licenseer)
+  * [web](./ebucket-2023/web)
+    * [auth](./ebucket-2023/web/auth)
+    * [gif](./ebucket-2023/web/gif)
+    * [ping_check](./ebucket-2023/web/ping_check)
+    * [sqli_1](./ebucket-2023/web/sqli_1)
+    * [sqli_3](./ebucket-2023/web/sqli_3)
+    * [sqli_4](./ebucket-2023/web/sqli_4)
+* [hackthebox-cyber-apocalypse-2023](./hackthebox-cyber-apocalypse-2023)
+  * [crypto](./hackthebox-cyber-apocalypse-2023/crypto)
+    * [ancient_encodings](./hackthebox-cyber-apocalypse-2023/crypto/ancient_encodings)
+    * [small_steps](./hackthebox-cyber-apocalypse-2023/crypto/small_steps)
+  * [forensics](./hackthebox-cyber-apocalypse-2023/forensics)
+    * [alien_cradle](./hackthebox-cyber-apocalypse-2023/forensics/alien_cradle)
+    * [extraterrestrial_persistence](./hackthebox-cyber-apocalypse-2023/forensics/extraterrestrial_persistence)
+    * [plaintext_tlearsure](./hackthebox-cyber-apocalypse-2023/forensics/plaintext_tlearsure)
+  * [hardware](./hackthebox-cyber-apocalypse-2023/hardware)
+    * [critical_flight](./hackthebox-cyber-apocalypse-2023/hardware/critical_flight)
+  * [pwn](./hackthebox-cyber-apocalypse-2023/pwn)
+    * [initial_connection](./hackthebox-cyber-apocalypse-2023/pwn/initial_connection)
+    * [labyrinth](./hackthebox-cyber-apocalypse-2023/pwn/labyrinth)
+    * [pandoras_box](./hackthebox-cyber-apocalypse-2023/pwn/pandoras_box)
+  * [rev](./hackthebox-cyber-apocalypse-2023/rev)
+    * [needle_in_a_haystack](./hackthebox-cyber-apocalypse-2023/rev/needle_in_a_haystack)
+  * [web](./hackthebox-cyber-apocalypse-2023/web)
+    * [didactic_octo_paddles](./hackthebox-cyber-apocalypse-2023/web/didactic_octo_paddles)
+    * [drobots](./hackthebox-cyber-apocalypse-2023/web/drobots)
+    * [gunhead](./hackthebox-cyber-apocalypse-2023/web/gunhead)
+    * [orbital](./hackthebox-cyber-apocalypse-2023/web/orbital)
+    * [passman](./hackthebox-cyber-apocalypse-2023/web/passman)
+    * [spybug](./hackthebox-cyber-apocalypse-2023/web/spybug)
+    * [trapped_source](./hackthebox-cyber-apocalypse-2023/web/trapped_source)
+    * [traptrack](./hackthebox-cyber-apocalypse-2023/web/traptrack)
+    * [unearthly_shop](./hackthebox-cyber-apocalypse-2023/web/unearthly_shop)
+* [jerseyctf-2023](./jerseyctf-2023)
+  * [bin](./jerseyctf-2023/bin)
+    * [my-favorite-game](./jerseyctf-2023/bin/my-favorite-game)
+    * [plain](./jerseyctf-2023/bin/plain)
+  * [web](./jerseyctf-2023/web)
+    * [i-got-the-keys](./jerseyctf-2023/web/i-got-the-keys)
+    * [look-im-hacking](./jerseyctf-2023/web/look-im-hacking)
+    * [ninja-jackers](./jerseyctf-2023/web/ninja-jackers)
+    * [poisoined](./jerseyctf-2023/web/poisoined)
+    * [put-the-cookie-down](./jerseyctf-2023/web/put-the-cookie-down)
+    * [timeless](./jerseyctf-2023/web/timeless)
+    * [xss-terminator](./jerseyctf-2023/web/xss-terminator)
+* [prostar](./prostar)
+* [ropemporium](./ropemporium)
+  * [callme](./ropemporium/callme)
+    * [32-bit](./ropemporium/callme/32-bit)
+    * [64-bit](./ropemporium/callme/64-bit)
+  * [ret2win](./ropemporium/ret2win)
+    * [32-bit](./ropemporium/ret2win/32-bit)
+    * [64-bit](./ropemporium/ret2win/64-bit)
+  * [split](./ropemporium/split)
+    * [32-bit](./ropemporium/split/32-bit)
+    * [64-bit](./ropemporium/split/64-bit)
+  * [write4](./ropemporium/write4)
+    * [32-bit](./ropemporium/write4/32-bit)
+    * [64-bit](./ropemporium/write4/64-bit)
+* [tryhackme](./tryhackme)
+  * [0day](./tryhackme/0day)
+  * [25daysofchristmas](./tryhackme/25daysofchristmas)
+  * [Reverse-Engineering](./tryhackme/Reverse-Engineering)
+  * [blog](./tryhackme/blog)
+  * [ghizerctf](./tryhackme/ghizerctf)
+  * [internal](./tryhackme/internal)
+  * [relevant](./tryhackme/relevant)
+  * [revenge](./tryhackme/revenge)
+  * [reverse-engineering-1](./tryhackme/reverse-engineering-1)
+  * [startup](./tryhackme/startup)
+  * [theserverfromhell](./tryhackme/theserverfromhell)
