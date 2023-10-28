@@ -6,6 +6,21 @@
 
 # Writeup
 
+When we try to list directory, it has given `.git` directory.
+
+```
+ $ aws s3api list-objects-v2 --bucket level3-9afd3927f195e10225021a578e6f78df.flaws.cloud --no-sign-request --region us-west-2
+...
+{
+    "Key": ".git/COMMIT_EDITMSG",
+    "LastModified": "2017-09-17T15:12:24.000Z",
+    "ETag": "\"5f8f2cb9c2664a23f08dd8a070ae7427\"",
+    "Size": 52,
+    "StorageClass": "STANDARD"
+},
+...
+```
+
 ```
 $ aws s3 sync s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud/ . --no-sign-request --region us-west-2
 
