@@ -1,3 +1,11 @@
+# Flaws Cloud
+### URl: http://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud/
+
+# Level 3
+### The next level is fairly similar, with a slight twist. Time to find your first AWS key! I bet you'll find something that will let you list what other buckets are.
+
+# Writeup
+
 ```
 $ aws s3 sync s3://level3-9afd3927f195e10225021a578e6f78df.flaws.cloud/ . --no-sign-request --region us-west-2
 
