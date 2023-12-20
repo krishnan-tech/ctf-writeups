@@ -39,7 +39,7 @@ Flag: `nite{t00_l1t3_huh_50m30n3_g37_an71_g2av17y_0v3r_h3r3}`
 
 Here, from the question title itself, we can get to know that it is python jail breaking challenge. So I have tried to imort os first, it was showing no imports are allowed. Other commands are getting banned like system. Also builtins are not defined... After some tries, I found out that we can use `breakpoint()` and then we can import os and run system command in the command line.
 
-![image](https://hackmd-prod-images.s3-ap-northeast-1.amazonaws.com/uploads/upload_8c99b839093ab64d5459c5c25e2e4191.png?AWSAccessKeyId=AKIA3XSAAW6AWSKNINWO&Expires=1702998435&Signature=9hWDUi3cL%2FYzABqSEkv4iOOTz%2Bc%3D)
+![image](https://github.com/krishnan-tech/ctf-writeups/assets/55576296/2c066999-4295-4813-8d9f-acd71b282589)
 
 Flag: `nitectf{sl1d3_0ver_th3se_4ttribut3s}`
 
